@@ -9,9 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^2.5.5",
-    "express": "^4.14.0"
+    "ejs": "^2.5.6",
+    "express": "^4.14.1"
   },
   "devDependencies": {},
-  "description": ""
+  "description": "Interactive Multimedia Programming portfolio demonstration. All changes in the repo will be automatically deployed to heroku."
 }
