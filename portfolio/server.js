@@ -46,7 +46,32 @@ app.get('/contact', function(req, res) {
 app.get('/lab1', function (req, res) {
     res.render('pages/alllabs/lab1');
 })
+app.get('/lab2', function (req, res) {
+    res.render('pages/alllabs/lab2');
+})
+app.get('/lab3', function (req, res) {
+    res.render('pages/alllabs/lab3');
+})
+app.get('/lab4', function (req, res) {
+    res.render('pages/alllabs/lab4');
+})
+app.get('/lab5', function (req, res) {
+    res.render('pages/alllabs/lab5');
+})
+app.get('/lab6', function (req, res) {
+    res.render('pages/alllabs/lab6');
+})
 
+
+app.get('/TP1/test', function (req, res) {
+    res.render('pages/alllabs/TP1/test');
+})
+app.get('/style.css', function (req, res) {
+    res.render('pages/alllabs/TP1/style');
+})
+app.get('/scripts.js', function (req, res) {
+    res.render('pages/alllabs/TP1/scripts');
+})
 
 // Start to listen incomig requests (start the web server)
 app.listen(app.get('port'), function() {

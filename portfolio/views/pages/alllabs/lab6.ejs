@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <% include ../partials/generic_header.ejs %>
+  <% include ../../partials/generic_header.ejs %>
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -13,27 +13,25 @@
            <span class="icon-bar"></span>
            <span class="icon-bar"></span>
          </button>
-         <a class="navbar-brand" href="/">Antoine</a>
+         <a class="navbar-brand" href="/home">Antoine</a>
        </div>
        <div id="navbar" class="collapse navbar-collapse">
          <ul class="nav navbar-nav">
            <li><a href="/">Home</a></li>
-           <li><a href="/labs">Labs</a></li>
-           <li class="active"><a href="/contact">My details</a></li>
+           <li class="active"><a href="/labs">Labs</a></li>
+           <li><a href="/contact">My details</a></li>
          </ul>
        </div><!--/.nav-collapse -->
      </div>
    </nav>
   <div class="container">
     <div>
-      <h1>A little about me:</h1>
-      <p>Hi! I'm Antoine Bellec, I was born in 1994</p>
-      <p>I'm french erasmus student.</p>
-      <p>Currently, I study computer sciences at oulu university of applied sciences.</p>
-      <p>Email: antoine.bellec29@gmail.com</p>
-      <p>Phone number: +33648694950</p>
+      <h1>Lab6</h1>
+        <p class="lead">All the work is available <a href="https://github.com/abellec/Interactive-mobile-programming/tree/master/TP6">here</a>.</p>
+      <h2>1. Flickr photo wall</h2>
+        <p>I have met some problems to resize the pictures and make it responsive.</p>
     </div>
   </div>
-  <% include ../partials/generic_body_end.ejs %>
+  <% include ../../partials/generic_body_end.ejs %>
 </body>
 </html>

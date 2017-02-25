@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ../../partials/generic_header.ejs %>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+     <div class="container">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="/home">Antoine</a>
+       </div>
+       <div id="navbar" class="collapse navbar-collapse">
+         <ul class="nav navbar-nav">
+           <li><a href="/">Home</a></li>
+           <li class="active"><a href="/labs">Labs</a></li>
+           <li><a href="/contact">My details</a></li>
+         </ul>
+       </div><!--/.nav-collapse -->
+     </div>
+   </nav>
+  <div class="container">
+    <div>
+      <h1>Lab4</h1>
+        <p class="lead">All the work is available <a href="https://github.com/abellec/Interactive-mobile-programming/tree/master/TP4">here</a>.</p>
+      <h2>1. Very simple draw application</h2>
+        <p>I had some difficulties to send my message in the chat but after some research and tests I have succeeded.</p>
+        <p>For help the other students I have sent my problem and the solution found in the chat.</p>
+      <h2>2. Simple game</h2>
+        <p>I first have done the game without the score, the time and the move of the square every 0.5 sec.</p>
+        <p>When I have succeeded this, I have added the score and in a 3rd time the time and the move of the square every 0.5.</p>
+        <p>It was difficult to manage the time. I had to work the game several times but I have done this! :)</p>
+    </div>
+  </div>
+  <% include ../../partials/generic_body_end.ejs %>
+</body>
+</html>
