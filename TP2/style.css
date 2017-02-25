@@ -1,0 +1,38 @@
+@media screen and (max-width: 479px){
+  body{
+    background-color: navy;
+  }
+
+}
+
+@media screen and (min-width: 480px){
+  #navigation li {
+    display: inline;
+  }
+
+}
+
+
+p {
+  text-indent: 30px;
+}
+
+body {
+    /*background-color: #ffffff;
+  background-image: url("background.jpg");*/
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+
+}
+
+h1, h2 {
+  margin: auto;
+}
+
+img {
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    width: 50%;
+}

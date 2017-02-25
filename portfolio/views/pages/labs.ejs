@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ../partials/generic_header.ejs %>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+     <div class="container">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="#">Veikko</a>
+       </div>
+       <div id="navbar" class="collapse navbar-collapse">
+         <ul class="nav navbar-nav">
+           <li><a href="/">Home</a></li>
+           <li class="active"><a href="/labs">Labs</a></li>
+           <li><a href="/contact">My details</a></li>
+         </ul>
+       </div><!--/.nav-collapse -->
+     </div>
+   </nav>
+  <div class="container">
+    <div>
+      <h1>Internet Multimedia Programming</h1>
+      <p class="lead">Here you can find all the labs, essays and other stuff I have create for this course. </p>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+           <h3 class="panel-title">Labs</h3>
+         </div>
+        <div class="panel-body">
+          <p>I have used Atom editor and local node.js server to create labs. I also tried Notepad++.
+            All the source codes are available in my git repository, located <a href="http://github.com">here</a></p>
+          <div class="list-group">
+            <button type="button" onclick="location.href='/lab1'" class="list-group-item">Lab 1 <small>(Click and see demonstration)</small><span class="badge">10.1.2017</span></button>
+            <button type="button" disabled="disabled" class="list-group-item">Lab 2 <small>(not available)</small> <span class="badge">17.1.2017</span></button>
+            <button type="button" disabled="disabled" class="list-group-item">Lab 3 <small>(not available)</small> <span class="badge">24.1.2017</span></button>
+            <button type="button" disabled="disabled" class="list-group-item">Lab 4 <small>(not available)</small> <span class="badge">xx.x.2017</span></button>
+            <button type="button" disabled="disabled" class="list-group-item">Lab 5 <small>(not available)</small> <span class="badge">xx.x.2017</span></button>
+            <button type="button" disabled="disabled" class="list-group-item">Lab 6 <small>(not available)</small> <span class="badge">xx.x.2017</span></button>
+            <button type="button" disabled="disabled" class="list-group-item">Lab 7 <small>(not available)</small> <span class="badge">xx.x.2017</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+           <h3 class="panel-title">Other stuff</h3>
+         </div>
+        <div class="panel-body">
+          <p>From here you can find all other extra stuff I created during the course.</p>
+          <div class="list-group">
+            <button type="button" disabled="disabled" class="list-group-item">My personal photo gallery demo</button>
+            <button type="button" disabled="disabled" class="list-group-item">Little game I created</button>
+            <button type="button" disabled="disabled" class="list-group-item">My experiments with web socket.</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% include ../partials/generic_body_end.ejs %>
+</body>
+</html>
