@@ -21,6 +21,22 @@ function send(){
   }
 }
 
+//2. Local storage
+
+function save()
+{
+  var inputElement = document.getElementById("storage");
+  var theMessage = inputElement.value;
+  localStorage.setItem("theMessage", theMessage);
+}
+
+function load()
+{
+  var name = document.getElementById("nameBox");
+  name.innerHTML += "<p>" + localStorage.getItem("theMessage") + "</p>";
+}
+
+//3. Audio
 
 function trackPlay(){
   var track = document.getElementById('audioplayer');
