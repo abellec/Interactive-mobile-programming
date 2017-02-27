@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Simple HTML document</title>
+  </head>
+  <body>
+    <p id = "chat"></p>
+      <p>
+        <input id="Ymessage" type="text" placeholder="Your message"></input>
+        <button onclick="send();">Send</button>
+      </p>
+
+      <h2>2. Local Storage</h2>
+
+      <input id="storage" type="text" placeholder="Your message"></input>
+      <button onclick="save()">Save</button>
+      <button onclick="load()">Load</button>
+      <p id="nameBox"></p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta, magna et bibendum facilisis, mi nisl vestibulum nisi, tempor accumsan sapien orci et ex. In malesuada libero id nunc mollis eleifend. Integer pretium consectetur arcu eu tincidunt. Praesent accumsan feugiat aliquam. Morbi non malesuada lacus. Vestibulum pharetra sem eu tortor vestibulum cursus. Aenean faucibus, purus vitae tincidunt iaculis, augue dolor sagittis elit, non viverra magna mauris ac nibh. Fusce vitae gravida ante. Cras quis ligula aliquet, tempor ex non, tempus nisi.
+      Aliquam ut luctus tortor. Praesent feugiat mattis metus, vitae feugiat dui sollicitudin vel. Sed ac vestibulum quam, in dictum arcu. Vestibulum a porta elit. Nulla malesuada rutrum velit, euismod luctus purus vehicula eu. Proin quis purus sed libero consectetur euismod. Fusce nisl lectus, molestie sed pulvinar quis, fermentum in libero. Nullam maximus tempor urna ut cursus. Suspendisse potenti. Nunc maximus suscipit pulvinar. Curabitur ut augue vel neque dictum blandit. Sed ut nibh non tortor ultricies egestas vel in libero. Etiam non sem eu ex pharetra varius. Curabitur sollicitudin augue nec massa cursus, et commodo augue iaculis.
+      Nam efficitur nisl quam, non rutrum augue cursus vel. Aenean vulputate imperdiet efficitur. Donec elementum rhoncus tincidunt. Suspendisse ac tempor purus. Aliquam tincidunt justo vitae est porta, ac pellentesque ligula sagittis. Vivamus et dignissim ligula. Phasellus arcu erat, varius sit amet gravida quis, condimentum eu ligula.
+      Mauris tincidunt sem nisl, sit amet semper odio aliquet nec. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eget imperdiet sem. Nullam posuere nulla non libero volutpat viverra. Nam vitae orci in nisl finibus faucibus. Sed elementum faucibus neque, et tempus nisi laoreet at. Maecenas auctor dignissim lectus a hendrerit. Quisque ac fermentum ex. Integer molestie lectus vel purus blandit, in scelerisque est mollis. Praesent scelerisque massa at pulvinar iaculis. Nullam non orci consequat, tincidunt dui vel, dignissim elit. Nunc egestas erat a ligula maximus, nec hendrerit ipsum porttitor. Cras nec ipsum ultricies, vulputate felis ac, finibus nisi. Sed volutpat, purus ut porta pulvinar, mauris est vestibulum est, et porttitor orci nisi pulvinar ex.
+      Ut ac urna sed urna congue tempor in ullamcorper arcu. Phasellus viverra accumsan commodo. Maecenas eget dignissim nulla, eget tristique mauris. Etiam tortor neque, consequat quis metus in, consectetur iaculis justo. Nunc varius vestibulum metus, ut dapibus elit ultrices in. In volutpat massa non velit sodales accumsan. Nullam congue urna justo. Aliquam sagittis arcu justo, nec bibendum dolor mattis non. Vivamus vel lacus imperdiet, consectetur eros vel, bibendum nunc. Vestibulum eget nibh non ipsum condimentum tincidunt ut at magna. Fusce sit amet magna cursus, luctus magna sit amet, aliquet tellus. In sodales eros ante, vel condimentum diam tincidunt a. Proin justo elit, consectetur vitae ultrices nec, consectetur quis orci. Pellentesque nec rhoncus elit.
+    </p>
+
+    <br />
+    <br />
+          <button id=play onclick="trackPlay()">Play</button>
+          <button id=pause onclick="trackPause()">Pause</button>
+          <br />
+          <input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input>          <audio id="audioplayer">
+            <source src="http://stream.basso.fi:8000/stream" type="audio/mp3">
+            <p>Your browser doesn't support HTML5 audio. Here is a <a href="viper.mp3">link to the audio</a> instead.</p>
+          </audio>
+    <br />
+    <br />
+
+    <img src="image.jpg" alt="Photo de northernlight" />
+    <h2>Second title</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta, magna et bibendum facilisis, mi nisl vestibulum nisi, tempor accumsan sapien orci et ex. In malesuada libero id nunc mollis eleifend. Integer pretium consectetur arcu eu tincidunt. Praesent accumsan feugiat aliquam. Morbi non malesuada lacus. Vestibulum pharetra sem eu tortor vestibulum cursus. Aenean faucibus, purus vitae tincidunt iaculis, augue dolor sagittis elit, non viverra magna mauris ac nibh. Fusce vitae gravida ante. Cras quis ligula aliquet, tempor ex non, tempus nisi.
+        Aliquam ut luctus tortor. Praesent feugiat mattis metus, vitae feugiat dui sollicitudin vel. Sed ac vestibulum quam, in dictum arcu. Vestibulum a porta elit. Nulla malesuada rutrum velit, euismod luctus purus vehicula eu. Proin quis purus sed libero consectetur euismod. Fusce nisl lectus, molestie sed pulvinar quis, fermentum in libero. Nullam maximus tempor urna ut cursus. Suspendisse potenti. Nunc maximus suscipit pulvinar. Curabitur ut augue vel neque dictum blandit. Sed ut nibh non tortor ultricies egestas vel in libero. Etiam non sem eu ex pharetra varius. Curabitur sollicitudin augue nec massa cursus, et commodo augue iaculis.
+        Nam efficitur nisl quam, non rutrum augue cursus vel. Aenean vulputate imperdiet efficitur. Donec elementum rhoncus tincidunt. Suspendisse ac tempor purus. Aliquam tincidunt justo vitae est porta, ac pellentesque ligula sagittis. Vivamus et dignissim ligula. Phasellus arcu erat, varius sit amet gravida quis, condimentum eu ligula.
+        Mauris tincidunt sem nisl, sit amet semper odio aliquet nec. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eget imperdiet sem. Nullam posuere nulla non libero volutpat viverra. Nam vitae orci in nisl finibus faucibus. Sed elementum faucibus neque, et tempus nisi laoreet at. Maecenas auctor dignissim lectus a hendrerit. Quisque ac fermentum ex. Integer molestie lectus vel purus blandit, in scelerisque est mollis. Praesent scelerisque massa at pulvinar iaculis. Nullam non orci consequat, tincidunt dui vel, dignissim elit. Nunc egestas erat a ligula maximus, nec hendrerit ipsum porttitor. Cras nec ipsum ultricies, vulputate felis ac, finibus nisi. Sed volutpat, purus ut porta pulvinar, mauris est vestibulum est, et porttitor orci nisi pulvinar ex.
+        Ut ac urna sed urna congue tempor in ullamcorper arcu. Phasellus viverra accumsan commodo. Maecenas eget dignissim nulla, eget tristique mauris. Etiam tortor neque, consequat quis metus in, consectetur iaculis justo. Nunc varius vestibulum metus, ut dapibus elit ultrices in. In volutpat massa non velit sodales accumsan. Nullam congue urna justo. Aliquam sagittis arcu justo, nec bibendum dolor mattis non. Vivamus vel lacus imperdiet, consectetur eros vel, bibendum nunc. Vestibulum eget nibh non ipsum condimentum tincidunt ut at magna. Fusce sit amet magna cursus, luctus magna sit amet, aliquet tellus. In sodales eros ante, vel condimentum diam tincidunt a. Proin justo elit, consectetur vitae ultrices nec, consectetur quis orci. Pellentesque nec rhoncus elit.
+      </p>
+  </body>
+
+</html>

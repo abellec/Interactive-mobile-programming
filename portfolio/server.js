@@ -66,12 +66,31 @@ app.get('/lab6', function (req, res) {
 app.get('/TP1/test', function (req, res) {
     res.render('pages/alllabs/TP1/test');
 })
-app.get('/style.css', function (req, res) {
-    res.render('pages/alllabs/TP1/style');
+app.get('/TP2/responsive', function (req, res) {
+    res.render('pages/alllabs/TP2/responsive');
 })
-app.get('/scripts.js', function (req, res) {
-    res.render('pages/alllabs/TP1/scripts');
+app.get('/TP2/test2', function (req, res) {
+    res.render('pages/alllabs/TP2/test2');
 })
+app.get('/TP3/test3', function (req, res) {
+    res.render('pages/alllabs/TP3/test3');
+})
+app.get('/TP4/test4', function (req, res) {
+    res.render('pages/alllabs/TP4/test4');
+})
+app.get('/TP4/test4,2', function (req, res) {
+    res.render('pages/alllabs/TP4/test4,2');
+})
+app.get('/TP5/test', function (req, res) {
+    res.render('pages/alllabs/TP5/test');
+})
+app.get('/TP5/test5', function (req, res) {
+    res.render('pages/alllabs/TP5/test5');
+})
+app.get('/TP6/test', function (req, res) {
+    res.render('pages/alllabs/TP6/test');
+})
+
 
 // Start to listen incomig requests (start the web server)
 app.listen(app.get('port'), function() {

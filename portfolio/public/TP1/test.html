@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <title>Simple HTML document</title>
+  </head>
+  <body>
+    <!-- Core of my page -->
+    <h1>Greetings</h1>
+    <p>Hello class, it´s so wonderful to be here on Tue morning at 8.</p>
+    <form action="#">
+        <p>Add a person</p>
+        <div id="personList"><p><strong>Persons:</strong></p>
+        <input type="text" id=name>
+        <input type="submit" value="Add" onclick="addPerson(document.getElementById('name').value)"/>
+  </body>
+</html>
